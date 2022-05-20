@@ -1,0 +1,136 @@
+//PALINDROME 
+
+function Palindrome(string) {
+    const len = string.length;
+    for (let i = 0; i < len / 2; i++) {
+        if (string[i]!== string[len - 1 - i]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+const name = prompt('Enter a string: ');
+const ans = Palindrome(name);
+console.log(ans);
+
+
+//CLOSEST NUMBER
+
+let n = 13;
+let m = 4;
+function closestNumber(n, m)
+{
+	let quotient = parseInt(n / m);
+	let num1 = m * quotient;
+	let num2 = (n * m) > 0 ?
+		(m * (quotient + 1)) : (m * (quotient - 1));
+	if (Math.abs(n - num1) < Math.abs(n - num2))
+		return num1;
+	return num2;
+}
+
+console.log(closestNumber(n,m));
+
+
+//MIN AND MAX
+
+var arr = [ 3,2,1,56,1000,167 ];
+const min = arr => arr.reduce((x, y) => Math.min(x, y));
+const max = arr => arr.reduce((x, y) => Math.max(x, y));
+console.log("Min:", min(arr));
+console.log("Max:", max(arr));
+
+
+//APPLICATION
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap tabel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"href="test3.css">
+  
+</head>
+<body>
+
+<div class="container">
+             
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>gender</th>
+        <th>phone number</th>
+        <th>email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>BARATHkUMAAR</td>
+        <td>22</td>
+        <td>male</td>
+        <td>8743688434</td>
+        <td>barath@email.com</td>
+    
+      </tr>
+      <tr>
+        <td>RIYAS</td>
+        <td>21</td>
+        <td>male</td>
+        <td>857876859</td>
+        <td>riyas@mail.com</td>
+      </tr>
+      <tr>
+        <td>MADHU</td>
+        <td>14</td>
+        <td>female</td>
+        <td>857123785</td>
+        <td>madhu@mail.com</td>
+      </tr>
+    </tbody>
+  </table>
+<button class="btn btn-success" >submit</button>
+</div>
+
+<div class="container2">
+  <h2> form</h2>
+  <form >
+    <div class="form-group">
+      <label for="Name">Name:</label>
+      <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" size="10">
+    </div>
+    <div class="form-group">
+      <label for="age">age:</label>
+      <input type="age" class="form-control" id="age" placeholder="Enter age" name="age">
+    </div>
+    <div class="form-group">
+      <label for="gender">gender:</label>
+      <input type="gender" class="form-control" id="gender" placeholder="Enter gender" name="gender">
+    </div>
+    <div class="form-group">
+      <label for="phone number">phone number:</label>
+      <input type="phone number" class="form-control" id="phone number" placeholder="Enter phone number" name="phone number">
+    </div>
+    <div class="form-group">
+      <label for="email">email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+      
+      
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+</body>
+</html>
+
+JAVASCRIPT : 
+var arr=(Name,Age,Gender,Phone,Mail)=> {
+return arr;
+}
+document.write(this.name="Barath",this.Age=18,this.Gender="Male",this.Phone=8124771445,this.Email="abcd@gmail.com");
